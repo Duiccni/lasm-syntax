@@ -23,20 +23,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.lasm",
-				"match": "\\b(nop|hlt|cmc|clc|stc|cli|sti|cld|std|pusha|popa|pushad|popad|ret|sret|fret|int3|int0|syscall|lodsb|lodsw|lodsd|jo|jno|jb|jc|jnae|jnb|jnc|jae|je|jz|jne|jnz|jbe|jna|ja|jnbe|js|jns|jpe|jp|jpo|jnp|jnge|jl|jle|jng|jnle|jg|jcxz|shl|rol|ror|rcl|rcr|sal|shr|sar|inc|dec|not|neg|push|pop|mul|div|imul|idiv|add|or|adc|sbb|and|sub|xor|cmp|int|def|jmp|call|mov|lodsx|test|#jmp|#set|#flush|org|con|times|:)\\b"
+				"match": "\\b(nop|hlt|cmc|clc|stc|cli|sti|cld|std|pusha|popa|pushad|popad|ret|sret|fret|int3|int0|syscall|lodsb|lodsw|lodsd|jo|jno|jb|jc|jnae|jnb|jnc|jae|je|jz|jne|jnz|jbe|jna|ja|jnbe|js|jns|jpe|jp|jpo|jnp|jnge|jl|jle|jng|jnle|jg|jcxz|shl|rol|ror|rcl|rcr|sal|shr|sar|inc|dec|not|neg|push|pop|mul|div|imul|idiv|add|or|adc|sbb|and|sub|xor|cmp|int|def|jmp|call|mov|lodsx|test|#jmp|#set|#flush|org|con|times)\\b"
 			}]
 		},
 		"number": {
 			"patterns": [{
-				"name": "keyword.other.unit",
+				"name": "entity",
 				"match": "\\b(0b(1|0)+|0x[0-f]+|[0-9]+)\\b"
-			}]
-		},
-		"constant": {
-			"patterns": [{
-				"name": "keyword.operator",
-				"begin": "&",
-				"end": " "
 			}]
 		},
 		"comments": {
@@ -49,6 +42,13 @@
 				"name": "comment.block",
 				"begin": "'''",
 				"end": "'''"
+			}]
+		},
+		"constant": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"begin": "&",
+				"end": " |\n|,"
 			}]
 		},
 		"strings": {
