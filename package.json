@@ -1,0 +1,25 @@
+{
+  "name": "lasm",
+  "displayName": "lasm",
+  "description": "Lasm Assembler Program",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lasm",
+      "aliases": ["lasm", "lasm"],
+      "extensions": [".lasm .asm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lasm",
+      "scopeName": "source.lasm",
+      "path": "./syntaxes/lasm.tmLanguage.json"
+    }]
+  }
+}
