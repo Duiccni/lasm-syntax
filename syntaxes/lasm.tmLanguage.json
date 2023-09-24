@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.lasm",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(nop|hlt|cmc|clc|stc|cli|sti|cld|std|pusha|popa|pushad|popad|ret|sret|fret|int3|int0|syscall|lodsb|lodsw|lodsd|jo|jno|jb|jc|jnae|jnb|jnc|jae|je|jz|jne|jnz|jbe|jna|ja|jnbe|js|jns|jpe|jp|jpo|jnp|jnge|jl|jle|jng|jnle|jg|jcxz|shl|rol|ror|rcl|rcr|sal|shr|sar|inc|dec|not|neg|push|pop|mul|div|imul|idiv|add|or|adc|sbb|and|sub|xor|cmp|int|def|jmp|call|mov|lodsx|test|#jmp|#set|#flush|org|con|times|:)\\b"
 			}]
 		},
 		"strings": {
