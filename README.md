@@ -2,6 +2,9 @@
 
 This is the README for your extension "lasm". After writing up a brief description, we recommend including the following sections.
 
+## Lasm Code with Lasm-Syntax
+![image](https://github.com/Duiccni/Lasm-v1.0.x/assets/143947543/c7ce0ec4-0121-4536-ac5f-bc290bb6cffb)
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
